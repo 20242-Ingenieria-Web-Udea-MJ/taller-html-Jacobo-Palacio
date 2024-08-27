@@ -36,5 +36,5 @@ Aquí se encuentra la lógica que permite a la calculadora funcionar. Maneja la 
 
 🎯 Cómo Usar
 1. Clonar el repositorio:
-Copiar código: git clone https://github.com/tu-usuario/calculadora-web.git
+Copiar código: git clone https://github.com/jeyko55/calculator-html-Jacobo-Palacio
 2. Abrir index.html en tu navegador preferido.
