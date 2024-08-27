@@ -1,57 +1,65 @@
+/* Estilos generales del cuerpo */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+    display: flex; /* Utiliza un diseño flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100vh; /* Define la altura del cuerpo como el 100% de la ventana gráfica */
+    margin: 0; /* Elimina márgenes del cuerpo */
+    background-color: #f4f4f4; /* Color de fondo claro para todo el cuerpo */
 }
 
+/* Estilos para el contenedor de la calculadora */
 .calculator {
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ancho fijo para la calculadora */
+    background-color: #fff; /* Fondo blanco para la calculadora */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar efecto de elevación */
 }
 
+/* Estilos para la pantalla de la calculadora */
 .display {
-    font-size: 2em;
-    padding: 20px;
-    background-color: #837c7c;
-    color: #fff;
-    text-align: right;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    font-size: 2em; /* Tamaño grande para los números */
+    padding: 20px; /* Espacio interno para la pantalla */
+    background-color: #837c7c; /* Fondo oscuro para la pantalla */
+    color: #fff; /* Texto blanco para contraste */
+    text-align: right; /* Alinea el texto a la derecha */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la pantalla antes de los botones */
 }
 
+/* Estilos para el contenedor de los botones */
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    display: grid; /* Utiliza un grid layout para organizar los botones */
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los botones */
 }
 
+/* Estilos para los botones */
 .btn {
-    padding: 20px;
-    font-size: 1.2em;
-    background-color: #eaeaea;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 20px; /* Espacio interno dentro de los botones */
+    font-size: 1.2em; /* Tamaño de fuente moderadamente grande */
+    background-color: #eaeaea; /* Color de fondo claro */
+    border: none; /* Sin bordes alrededor de los botones */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    transition: background-color 0.3s; /* Animación suave para el cambio de color al pasar el cursor */
 }
 
+/* Estilos específicos para los botones de operadores */
 .btn.operator {
-    background-color: #f0a500;
-    color: #fff;
+    background-color: #f0a500; /* Color de fondo distinto para operadores */
+    color: #fff; /* Texto blanco */
 }
 
+/* Estilos específicos para el botón de igual */
 .btn.equal {
-    grid-column: span 4;
-    background-color: #f76c6c;
-    color: #fff;
+    grid-column: span 4; /* Ocupa toda la fila, combinando las cuatro columnas */
+    background-color: #f76c6c; /* Color de fondo diferente para destacar el botón de igual */
+    color: #fff; /* Texto blanco */
 }
 
+/* Efecto hover para los botones */
 .btn:hover {
-    background-color: #d4d4d4;
+    background-color: #d4d4d4; /* Cambia el color de fondo al pasar el cursor por encima */
 }

@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la ventana gráfica para que sea responsive -->
+    <title>Calculadora Web</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo de estilos CSS externo -->
 </head>
 <body>
+    <!-- Contenedor principal de la calculadora -->
     <div class="calculator">
+        <!-- Pantalla de la calculadora donde se muestran los números y resultados -->
         <div id="display" class="display">0</div>
+        <!-- Contenedor de los botones de la calculadora -->
         <div class="buttons">
+            <!-- Fila de botones de números y operador de división -->
             <button class="btn" data-value="7">7</button>
             <button class="btn" data-value="8">8</button>
             <button class="btn" data-value="9">9</button>
             <button class="btn operator" data-value="/">/</button>
 
+            <!-- Fila de botones de números y operador de multiplicación -->
             <button class="btn" data-value="4">4</button>
             <button class="btn" data-value="5">5</button>
             <button class="btn" data-value="6">6</button>
             <button class="btn operator" data-value="*">*</button>
 
+            <!-- Fila de botones de números y operador de resta -->
             <button class="btn" data-value="1">1</button>
             <button class="btn" data-value="2">2</button>
             <button class="btn" data-value="3">3</button>
             <button class="btn operator" data-value="-">-</button>
 
+            <!-- Fila de botones de números, punto decimal, botón de limpiar y operador de suma -->
             <button class="btn" data-value="0">0</button>
             <button class="btn" data-value=".">.</button>
-            <button class="btn" data-value="C">C</button>
+            <button class="btn" data-value="C">C</button> <!-- Botón para limpiar la pantalla -->
             <button class="btn operator" data-value="+">+</button>
 
+            <!-- Botón para ejecutar la operación y mostrar el resultado -->
             <button class="btn equal" data-value="=">=</button>
         </div>
     </div>
+    <!-- Vincula el archivo de JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
